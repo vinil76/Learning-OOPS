@@ -23,10 +23,19 @@ public class Main {
 //        s.setDetails("Vinil",116);
 //        s.displayDetails();
 
-          BankAccount b = new BankAccount("9662375274869",8655);
-          b.deposit(5854);
-          b.withdraw(9437);
-          b.displayDetails();
+//          BankAccount b1 = new BankAccount("9662375274869",8655);
+//          BankAccount b2 = new BankAccount(b1);
+//          b1.deposit(5854);
+//          b1.withdraw(9437);
+//          b1.displayDetails();
+//
+//          b2.displayDetails();
+        Rectangle r1 = new Rectangle();
+        r1.calculateArea();
+        r1.displayDetails();
+        Rectangle r2 = new Rectangle(5.0,3.0);
+        r2.calculateArea();
+        r2.displayDetails();
 
     }
 }

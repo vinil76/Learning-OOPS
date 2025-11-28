@@ -13,6 +13,11 @@ public class BankAccount {
         this.balance = balance;
     }
 
+    public BankAccount(BankAccount other){
+        this.accountNumber = other.accountNumber;
+        this.balance = other.balance;
+    }
+
     public void deposit(double amount){
         if(amount > 0){
             balance += amount;
@@ -25,7 +30,7 @@ public class BankAccount {
         if(amount <= balance){
             balance -= amount;
         }else{
-            System.out.println("Insufficient funds");
+            System.out.println("Insufficient funds!");
         }
 
     }
