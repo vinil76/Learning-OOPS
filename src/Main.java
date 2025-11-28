@@ -47,7 +47,7 @@ public class Main {
 
         Book b1 = new Book(titles,authors,availability);
         b1.borrowBook("Java");
-        System.out.println(b1.getAvailability("Python"));
+        b1.getAvailability("Python");
 
 
     }

@@ -41,12 +41,11 @@ public class Book {
         }
     }
 
-    public boolean getAvailability(String bookName){
+    public void getAvailability(String bookName){
         for (int i = 0; i < title.size(); i++) {
             if (title.get(i).equals(bookName)) {
-                return isAvailable.get(i);
+                System.out.println(isAvailable.get(i));
             }
         }
-        return false;
     }
 }
