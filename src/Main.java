@@ -12,16 +12,21 @@ public class Main {
 //            System.out.println("i = " + i);
 //        }
 
-        Car c = new Car();
-        c.setColor("Red");
-        c.setSpeed(-10);
-        System.out.println("Color: " + c.getColor());
-        System.out.println("Speed: " + c.getSpeed());
+//        Car c = new Car();
+//        c.setColor("Red");
+//        c.setSpeed(-10);
+//        System.out.println("Color: " + c.getColor());
+//        System.out.println("Speed: " + c.getSpeed());
+//
+//
+//        Student s = new Student();
+//        s.setDetails("Vinil",116);
+//        s.displayDetails();
 
-
-        Student s = new Student();
-        s.setDetails("Vinil",116);
-        s.displayDetails();
+          BankAccount b = new BankAccount("9662375274869",8655);
+          b.deposit(5854);
+          b.withdraw(9437);
+          b.displayDetails();
 
     }
 }
