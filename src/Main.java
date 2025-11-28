@@ -1,3 +1,5 @@
+import practice.multilevelInheritance.BoardingStudent;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -47,13 +49,17 @@ public class Main {
 //        b1.getAvailability("Python");
 
 
-        Employee emp = new Employee("Vinil", 101, 50000);
-        System.out.println(emp.name);
-        System.out.println(emp.employeeId);
-        emp.getSalary();
-        emp.setSalary(-55000);
-        emp.setSalary(55000);
-        emp.displayEmployeeDetails();
+//        Employee emp = new Employee("Vinil", 101, 50000);
+//        System.out.println(emp.name);
+//        System.out.println(emp.employeeId);
+//        System.out.println("Salary : "+String.format("%.2f",emp.getSalary()));
+//        emp.setSalary(-55000);
+//        emp.setSalary(55000);
+//        emp.displayEmployeeDetails();
+
+        BoardingStudent b = new BoardingStudent("Vinil",23,101,"Masters", 3,"Tanuj");
+        System.out.println(b.getName());
+        b.displayBoardingDetails();
 
     }
 }

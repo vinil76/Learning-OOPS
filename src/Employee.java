@@ -13,20 +13,25 @@ public class Employee {
     public  Employee(String name,int employeeId,double salary){
         this.name = name;
         this.employeeId = employeeId;
-        this.salary = salary;
-    }
-
-    public void setSalary(double salary){
         if(salary < 0){
             System.out.println("Invalid salary");
             this.salary = 0.0;
-        }else{
+        }else {
             this.salary = salary;
         }
     }
 
-    public void getSalary(){
-        System.out.println("Salary : "+ String.format("%.2f",this.salary));
+    public void setSalary(double salary1){
+        if(salary1 < 0){
+            System.out.println("Invalid salary");
+            this.salary = 0.0;
+        }else{
+            this.salary = salary1;
+        }
+    }
+
+    public double getSalary(){
+        return this.salary;
     }
 
     public void displayEmployeeDetails(){
