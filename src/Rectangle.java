@@ -1,7 +1,7 @@
 public class Rectangle {
 
-    private double length;
-    private double width;
+    private final double length;
+    private final double width;
     private double area;
 
     public Rectangle(){

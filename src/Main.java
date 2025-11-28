@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -30,12 +33,22 @@ public class Main {
 //          b1.displayDetails();
 //
 //          b2.displayDetails();
-        Rectangle r1 = new Rectangle();
-        r1.calculateArea();
-        r1.displayDetails();
-        Rectangle r2 = new Rectangle(5.0,3.0);
-        r2.calculateArea();
-        r2.displayDetails();
+//        Rectangle r1 = new Rectangle();
+//        r1.calculateArea();
+//        r1.displayDetails();
+//        Rectangle r2 = new Rectangle(5.0,3.0);
+//        r2.calculateArea();
+//        r2.displayDetails();
+
+
+        List<String> titles = new ArrayList<>(List.of("Java", "Python", "C++"));
+        List<String> authors = new ArrayList<>(List.of("James", "Guido", "Bjarne"));
+        List<Boolean> availability = new ArrayList<>(List.of(true, true, false));
+
+        Book b1 = new Book(titles,authors,availability);
+        b1.borrowBook("Java");
+        System.out.println(b1.getAvailability("Python"));
+
 
     }
 }
