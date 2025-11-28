@@ -18,5 +18,10 @@ public class Main {
         System.out.println("Color: " + c.getColor());
         System.out.println("Speed: " + c.getSpeed());
 
+
+        Student s = new Student();
+        s.setDetails("Vinil",116);
+        s.displayDetails();
+
     }
 }
