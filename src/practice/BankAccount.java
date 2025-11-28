@@ -1,3 +1,5 @@
+package practice;
+
 public class BankAccount {
 
     private final String accountNumber;

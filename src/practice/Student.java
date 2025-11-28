@@ -1,3 +1,5 @@
+package practice;
+
 public class Student {
     String name;
     int rollNumber;

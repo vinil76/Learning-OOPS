@@ -1,3 +1,5 @@
+package practice;
+
 public class Rectangle {
 
     private final double length;

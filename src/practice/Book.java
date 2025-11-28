@@ -1,3 +1,5 @@
+package practice;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +27,7 @@ public class Book {
                 if(isAvailable.get(i)){
                     isAvailable.set(i,false);
                 }else{
-                    System.out.println("Book is not available.");
+                    System.out.println("practice.Book is not available.");
                 }
             }
         }
@@ -34,9 +36,7 @@ public class Book {
     public void returnBook(String bookName) {
         for (int i = 0; i < title.size(); i++) {
             if (title.get(i).equals(bookName)) {
-                if (isAvailable.get(i)) {
-                    isAvailable.set(i, true);
-                }
+                isAvailable.set(i, true);
             }
         }
     }
