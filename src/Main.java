@@ -1,3 +1,5 @@
+import inheritance_prac.Engineer;
+import inheritance_prac.Manager;
 import practice.multilevelInheritance.BoardingStudent;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -57,9 +59,16 @@ public class Main {
 //        emp.setSalary(55000);
 //        emp.displayEmployeeDetails();
 
-        BoardingStudent b = new BoardingStudent("Vinil",23,101,"Masters", 3,"Tanuj");
-        System.out.println(b.getName());
-        b.displayBoardingDetails();
+//        BoardingStudent b = new BoardingStudent("Vinil",23,101,"Masters", 3,"Tanuj");
+//        System.out.println(b.getName());
+//        b.displayBoardingDetails();
+
+          Manager m1 = new Manager("Details",101,5);
+          Engineer e1 = new Engineer("Vinil",101,"Backend Developer");
+
+          m1.displayDetails();
+          System.out.println("----------------");
+          e1.displayDetails();
 
     }
 }
