@@ -1,5 +1,9 @@
 import inheritance_prac.Engineer;
 import inheritance_prac.Manager;
+import overload_overide.Circle;
+import overload_overide.Shape;
+import overload_overide.Triangle;
+import polyform_prac.ShapeCalculator;
 import practice.multilevelInheritance.BoardingStudent;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -63,12 +67,29 @@ public class Main {
 //        System.out.println(b.getName());
 //        b.displayBoardingDetails();
 
-          Manager m1 = new Manager("Details",101,5);
-          Engineer e1 = new Engineer("Vinil",101,"Backend Developer");
+//          Manager m1 = new Manager("Details",101,5);
+//          Engineer e1 = new Engineer("Vinil",101,"Backend Developer");
+//
+//          m1.displayDetails();
+//          System.out.println("----------------");
+//          e1.displayDetails();
 
-          m1.displayDetails();
-          System.out.println("----------------");
-          e1.displayDetails();
+//            Shape s = new Shape();
+//            System.out.println("Default Shape Area: " + s.area());
+//            System.out.println("Square Area (side=5): " + s.area(5));
+//            System.out.println("Rectangle Area (length=4, width=6): " + s.area(4,6));
+//
+//            Circle c = new Circle(3);
+//            System.out.println("Circle Area: " + String.format("%.2f", c.area()));
+//
+//            Triangle t = new Triangle(4,5);
+//            System.out.println("Triangle Area: " + String.format("%.2f", t.area()));
+
+              ShapeCalculator s = new ShapeCalculator();
+              s.area(3);
+              s.area(2,5);
+              s.area(4,3,5);
+
 
     }
 }

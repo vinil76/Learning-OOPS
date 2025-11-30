@@ -2,15 +2,15 @@ package overload_overide;
 
 public class Shape {
 
-    public int area(){
+    public double area(){
         return 0;
     }
 
-    public int area(int side){
+    public double area(int side) {
         return side * side;
     }
 
-    public int area(int length,int width){
+    public double area(int length, int width) {
         return length * width;
     }
 }
