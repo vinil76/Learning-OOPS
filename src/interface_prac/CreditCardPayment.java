@@ -8,6 +8,6 @@ public class CreditCardPayment implements PaymentGateway{
 
     @Override
     public void processPayment(){
-        System.out.println("Processing credit card payment of "+amount);
+        System.out.println("Processing credit card payment of "+String.format("%.2f",amount));
     }
 }

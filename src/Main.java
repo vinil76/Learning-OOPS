@@ -11,6 +11,10 @@ import overload_overide.Shape;
 import overload_overide.Triangle;
 import polyform_prac.ShapeCalculator;
 import practice.multilevelInheritance.BoardingStudent;
+import static_prac.Counter;
+
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -100,11 +104,22 @@ public class Main {
 //                d.makeSound();
 //                c.makeSound();
 
-                 PaymentGateway p1 = new CreditCardPayment(284.5);
-                 PaymentGateway p2 = new UPIPayment(2747.2);
+//                 PaymentGateway p1 = new CreditCardPayment(284.5);
+//                 PaymentGateway p2 = new UPIPayment(2747.2);
+//
+//                 p1.processPayment();
+//                 p2.processPayment();
 
-                 p1.processPayment();
-                 p2.processPayment();
+        Scanner sc = new Scanner(System.in);
+         int count = sc.nextInt();
+         int start = 0;
+
+         while(start > count){
+             Counter c = new Counter();
+             start++;
+         }
+        System.out.println("Number of objects created : "+Counter.getCount());
+         sc.close();
 
 
 
