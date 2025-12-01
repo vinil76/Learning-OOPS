@@ -3,7 +3,7 @@ package polyform_prac;
 public class ShapeCalculator {
 
     public void area(int radius){
-        System.out.println("Area of Circle : "+(3 * radius * radius));
+        System.out.println("Area of Circle : "+(int)(3.14 * radius * radius));
     }
 
     public void area(int length, int width){

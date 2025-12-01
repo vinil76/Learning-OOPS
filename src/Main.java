@@ -1,3 +1,6 @@
+import abstarction_prac.Animal;
+import abstarction_prac.Cat;
+import abstarction_prac.Dog;
 import inheritance_prac.Engineer;
 import inheritance_prac.Manager;
 import overload_overide.Circle;
@@ -5,7 +8,6 @@ import overload_overide.Shape;
 import overload_overide.Triangle;
 import polyform_prac.ShapeCalculator;
 import practice.multilevelInheritance.BoardingStudent;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -85,10 +87,15 @@ public class Main {
 //            Triangle t = new Triangle(4,5);
 //            System.out.println("Triangle Area: " + String.format("%.2f", t.area()));
 
-              ShapeCalculator s = new ShapeCalculator();
-              s.area(3);
-              s.area(2,5);
-              s.area(4,3,5);
+//              ShapeCalculator s = new ShapeCalculator();
+//              s.area(3);
+//              s.area(2,5);
+//              s.area(4,3,5);
+
+                Animal d = new Dog("Buddy");
+                Animal c = new Cat("Whiskers");
+                d.makeSound();
+                c.makeSound();
 
 
     }
