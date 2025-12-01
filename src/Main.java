@@ -3,6 +3,9 @@ import abstarction_prac.Cat;
 import abstarction_prac.Dog;
 import inheritance_prac.Engineer;
 import inheritance_prac.Manager;
+import interface_prac.CreditCardPayment;
+import interface_prac.PaymentGateway;
+import interface_prac.UPIPayment;
 import overload_overide.Circle;
 import overload_overide.Shape;
 import overload_overide.Triangle;
@@ -92,10 +95,17 @@ public class Main {
 //              s.area(2,5);
 //              s.area(4,3,5);
 
-                Animal d = new Dog("Buddy");
-                Animal c = new Cat("Whiskers");
-                d.makeSound();
-                c.makeSound();
+//                Animal d = new Dog("Buddy");
+//                Animal c = new Cat("Whiskers");
+//                d.makeSound();
+//                c.makeSound();
+
+                 PaymentGateway p1 = new CreditCardPayment(284.5);
+                 PaymentGateway p2 = new UPIPayment(2747.2);
+
+                 p1.processPayment();
+                 p2.processPayment();
+
 
 
     }
